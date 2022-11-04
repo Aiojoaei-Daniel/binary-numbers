@@ -1,0 +1,53 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100%;
+}
+.game {
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+
+  height: 50%;
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 4px solid var(--primary-blue);
+}
+
+.options-container {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.bits-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
+
+.bits-input > * {
+  width: 20%;
+}
+
+@media screen and (max-width: 1650px) {
+  .game {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .game {
+    width: 90%;
+  }
+}

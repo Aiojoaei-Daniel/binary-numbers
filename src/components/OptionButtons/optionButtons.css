@@ -1,0 +1,39 @@
+.option {
+  background: none;
+  border-radius: 4px;
+
+  color: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+  border-top: 2px solid var(--primary-blue);
+  border-bottom: 2px solid var(--primary-blue);
+
+  width: 30%;
+  height: 2.5rem;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: var(--font-family);
+
+  letter-spacing: var(--spacing-x);
+}
+
+.option:hover {
+  color: var(--color-white);
+  transition: var(--transition);
+  background-color: var(--primary-blue);
+}
+
+@media screen and (max-width: 600px) {
+  .options-container {
+    display: flex;
+    height: 45%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .option {
+    width: 70%;
+    height: 3rem;
+  }
+}

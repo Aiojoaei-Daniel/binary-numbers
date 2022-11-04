@@ -1,0 +1,102 @@
+.bits-input {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+label {
+  color: var(--color-purple);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  width: 48% !important;
+}
+
+input {
+  height: 3rem;
+  width: 48% !important;
+
+  margin-top: 1rem;
+  padding-left: 10px;
+  border-radius: var(--radius);
+  font-size: var(--font-size);
+
+  border: 2px solid var(--color-purple);
+  color: var(--color-purple);
+  background: none;
+
+  font-family: var(--font-family);
+  letter-spacing: var(--spacing-s);
+}
+
+input:focus {
+  outline: none;
+  color: var(--color-white);
+  background-color: var(--color-purple);
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 140px;
+
+  width: 50% !important;
+  height: 3rem;
+  border-radius: var(--radius);
+
+  color: var(--color-white);
+  background-color: var(--bg-error);
+  transition: var(--transition);
+
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.start {
+  cursor: pointer;
+  margin-top: 4rem;
+  width: 50% !important;
+
+  transition: var(--transition);
+
+  font-weight: 800;
+  font-size: 1.4rem;
+  font-family: var(--font-family);
+
+  color: var(--primary-blue);
+  border: 0.5px solid var(--primary-blue);
+  border-top: 2px solid var(--primary-blue);
+  border-bottom: 2px solid var(--primary-blue);
+}
+
+.start:hover {
+  color: var(--color-white);
+  background-color: var(--primary-blue);
+}
+
+.start:focus {
+  color: var(--primary-blue);
+  background: none;
+}
+
+@media screen and (max-width: 1400px) {
+  label {
+    font-weight: bold;
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .error {
+    width: 90% !important;
+  }
+  input,
+  label {
+    width: 90% !important;
+  }
+  .start {
+    width: 92% !important;
+  }
+}
