@@ -32,8 +32,19 @@
     justify-content: space-evenly;
     flex-direction: column;
   }
+
   .option {
     width: 70%;
     height: 3rem;
+  }
+
+  .option:hover {
+    color: var(--primary-blue);
+    background: none;
+  }
+
+  .option:active {
+    color: var(--color-white);
+    background-color: var(--primary-blue);
   }
 }

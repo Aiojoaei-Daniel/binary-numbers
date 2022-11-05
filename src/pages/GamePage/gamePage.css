@@ -6,10 +6,10 @@
   height: 100%;
 }
 .game {
-  margin-top: 10rem;
-  margin-bottom: 4rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 
-  height: 50%;
+  height: 60%;
   width: 30%;
 
   display: flex;

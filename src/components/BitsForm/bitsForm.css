@@ -41,7 +41,7 @@ input:focus {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 140px;
+  top: 10px;
 
   width: 50% !important;
   height: 3rem;
